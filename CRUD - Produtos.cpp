@@ -75,7 +75,8 @@ int main (void){
 
 int menu(){
 	int opcao;
-	printf("------------------------\n");
+	do{
+		printf("------------------------\n");
 	printf("CRUD PRODUTOS \n");
 	printf("1. Incluir\n");
 	printf("2. Listar \n");
@@ -85,6 +86,8 @@ int menu(){
 	printf("\n\nDigite sua opção:\n");	
 
 	scanf("%d", &opcao);
+		
+	} while (opcao!=1 && opcao != 2 && opcao != 3);
 
 	return opcao;
 }
