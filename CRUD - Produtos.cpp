@@ -77,17 +77,16 @@ int menu(){
 	int opcao;
 	do{
 		printf("------------------------\n");
-	printf("CRUD PRODUTOS \n");
-	printf("1. Incluir\n");
-	printf("2. Listar \n");
-	printf("3. Consultar \n");
-	printf("0. Sair\n");
-	printf("------------------------\n");	
-	printf("\n\nDigite sua opção:\n");	
-
-	scanf("%d", &opcao);
-		
-	} while (opcao!=1 && opcao != 2 && opcao != 3);
+		printf("CRUD PRODUTOS \n");
+		printf("1. Incluir\n");
+		printf("2. Listar \n");
+		printf("3. Consultar \n");
+		printf("0. Sair\n");
+		printf("------------------------\n");	
+		printf("\n\nDigite sua opção:\n");	
+	
+		scanf("%d", &opcao);
+	} while (opcao!=1 && opcao != 2 && opcao != 3 && opcao!=0);
 
 	return opcao;
 }
